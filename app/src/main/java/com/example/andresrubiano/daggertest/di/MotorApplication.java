@@ -13,7 +13,9 @@ public class MotorApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        motorComponent = DaggerMotorComponent.builder().motorModule(new MotorModule()).build();
+        motorComponent = DaggerMotorComponent.builder()
+                .motorModule(new MotorModule())
+                .build();
     }
 
     public MotorComponent getMotorComponent() {
